@@ -17,7 +17,7 @@ interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
-@app.route('/api/is-cotton', methods=['POST'])
+@app.route('/', methods=['POST'])
 def check_cotton():
     if 'file' not in request.files:
         return jsonify({'error': 'No file part'}), 400
