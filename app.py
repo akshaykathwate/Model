@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load binary classification model (cotton vs non-cotton)
-COTTON_CHECK_MODEL_PATH = 'cotton_model2.h5'
+COTTON_CHECK_MODEL_PATH = 'cotton_model_v1.keras'
 cotton_model = load_model(COTTON_CHECK_MODEL_PATH)
 
 IMG_SIZE = 224
